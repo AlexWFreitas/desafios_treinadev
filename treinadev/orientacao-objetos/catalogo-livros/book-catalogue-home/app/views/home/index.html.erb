@@ -1,0 +1,9 @@
+<title>Catálogo de Livros</title>
+<h1>Catálogo de Livros</h1>
+<p>Boas vindas!</p>
+
+<% @books.each do |livro| %>
+    <h3> <%= livro.title %> </h3>
+    <p>  <%= livro.author %>  </p>
+    <p>  <%= livro.publication_year %> </p>
+<% end %>

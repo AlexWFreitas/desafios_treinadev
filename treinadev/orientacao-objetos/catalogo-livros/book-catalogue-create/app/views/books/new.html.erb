@@ -1,0 +1,34 @@
+<%= form_with model: @book do |f| %>
+    <div>
+         <%= f.label 'Título:' %><br> 
+        <%= f.text_field :title, id:"Título" %>
+    </div>
+
+    <div>
+        <%= f.label 'Autor(a):' %><br>
+        <%= f.text_field :author, id:"Autora" %>
+    </div>
+
+    <div>
+        <%= f.label 'Ano de publicação:' %><br>
+        <%= f.number_field :publication_year, id:"Ano de publicação" %>
+    </div>
+
+    <div>
+        <%= f.label 'Gênero:' %><br>
+        <%= f.text_field :genre, id:"Gênero"  %>
+    </div>
+
+    <div>
+        <%= f.label 'Resumo:' %><br>
+        <%= f.text_field :abstract, id:"Resumo" %>
+    </div>
+
+    <div>
+        <%= f.submit "Enviar" %>
+    </div>
+
+    <% if flash[:error] %>
+        <p>Todos campos devem ser preenchidos</p>
+    <% end %>
+<% end %>

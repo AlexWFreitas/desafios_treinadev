@@ -1,0 +1,962 @@
+Started GET "/" for 127.0.0.1 at 2020-12-12 21:41:33 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/otaru/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x000055f767861aa0%3E" for 127.0.0.1 at 2020-12-12 21:41:34 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/otaru/workspace/desafios-oo/book-catalogue-create/app/views/books/new.html.erb:3: syntax error, unexpected '=', expecting `end'
+...afe_append='        '.freeze; = form.label 'Título';@output...
+...                              ^
+/home/otaru/workspace/desafios-oo/book-catalogue-create/app/views/books/new.html.erb:9: syntax error, unexpected '=', expecting end-of-input
+...afe_append='        '.freeze; = form.label 'Autora';@output_...
+...                              ^
+):
+  
+app/views/books/new.html.erb:3: syntax error, unexpected '=', expecting `end'
+app/views/books/new.html.erb:9: syntax error, unexpected '=', expecting end-of-input
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x000055f767861aa0%3E" for 127.0.0.1 at 2020-12-12 21:41:45 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/otaru/workspace/desafios-oo/book-catalogue-create/app/views/books/new.html.erb:17: syntax error, unexpected `end', expecting end-of-input
+'.freeze;         end 
+                  ^~~
+):
+  
+app/views/books/new.html.erb:17: syntax error, unexpected `end', expecting end-of-input
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x000055f767861aa0%3E" for 127.0.0.1 at 2020-12-12 21:42:22 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/otaru/workspace/desafios-oo/book-catalogue-create/app/views/books/new.html.erb:17: syntax error, unexpected `end', expecting end-of-input
+'.freeze;         end 
+                  ^~~
+):
+  
+app/views/books/new.html.erb:17: syntax error, unexpected `end', expecting end-of-input
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x000055f767861aa0%3E" for 127.0.0.1 at 2020-12-12 21:42:23 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/otaru/workspace/desafios-oo/book-catalogue-create/app/views/books/new.html.erb:17: syntax error, unexpected `end', expecting end-of-input
+'.freeze;         end 
+                  ^~~
+):
+  
+app/views/books/new.html.erb:17: syntax error, unexpected `end', expecting end-of-input
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x000055f767861aa0%3E" for 127.0.0.1 at 2020-12-12 21:42:43 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (45.5ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x000055f76799d388>:0x00007f9e483e1ac8>
+Did you mean?  for
+               fork):
+    1: <%= form_with model: @book do |f| %>
+    2:     <div>
+    3:         <%= form.label 'Título' %><br>
+    4:         <%= form.text_field :title %>
+    5:     </div>
+    6: 
+  
+app/views/books/new.html.erb:3:in `block in _app_views_books_new_html_erb___4514754822097813324_11000'
+app/views/books/new.html.erb:1:in `_app_views_books_new_html_erb___4514754822097813324_11000'
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x000055f767861aa0%3E" for 127.0.0.1 at 2020-12-12 21:43:00 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:43:03 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dEERBG0/L7tboBDHANGwFQPuRQ8C5QOZgRIATV6Vr9aR3YH/2HvLj8pYua1erGtlkfhyC9sqqM5w67UCq651pA==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "gender"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'gender' for Book.):
+  
+app/controllers/books_controller.rb:11:in `create'
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:43:29 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dEERBG0/L7tboBDHANGwFQPuRQ8C5QOZgRIATV6Vr9aR3YH/2HvLj8pYua1erGtlkfhyC9sqqM5w67UCq651pA==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "gender"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+Unpermitted parameter: :gender
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:43:37 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9ku2D2whJWd4fBi4yaCZu+brRGHhGDkTKGuEVZuBVzsT1yb02WXBU+mEsdKX3ULLdP1zZTjXkkTZkjEabrqNSQ==", "book"=>{"title"=>"Teste", "author"=>"Abcdef", "publication_year"=>"1234", "genre"=>"arara", "abstract"=>"rarara"}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication_year", "abstract", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Teste"], ["author", "Abcdef"], ["publication_year", 1234], ["abstract", "rarara"], ["genre", "arara"], ["created_at", "2020-12-13 00:43:37.464387"], ["updated_at", "2020-12-13 00:43:37.464387"]]
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (63.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+Redirected to http://localhost:3000/books/1
+Completed 302 Found in 67ms (ActiveRecord: 64.0ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2020-12-12 21:43:37 -0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:7
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-12 21:43:38 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2020-12-12 21:43:40 -0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:7
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-12 21:43:40 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x00007f9e4845d1a0%3E" for 127.0.0.1 at 2020-12-12 21:43:41 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:43:52 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IKkdT83IrZR9oh2Pv/1xCc/SKp0xuikUE6HmHZdQ8UjFNY20eIxJoOxatOXhgKp5XcQdmeh1gkPiWFNSYmsrOg==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"jouh", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:43:54 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"medvtl/MErfkjM40oJrsbjwlcA3alq4LEGXKbIOMCfB8e/9N6oj2g3V0Z17+5zcerjNHCQNZBVzhnH8jdrfTgg==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"jouh", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:44:08 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"medvtl/MErfkjM40oJrsbjwlcA3alq4LEGXKbIOMCfB8e/9N6oj2g3V0Z17+5zcerjNHCQNZBVzhnH8jdrfTgg==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"jouh", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2020-12-12 21:47:43 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/books" for 127.0.0.1 at 2020-12-12 21:47:56 -0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for BooksController):
+  
+actionpack (5.2.4.4) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.4) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.4) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.4) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.4) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.4) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.4) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.4) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-12-12 21:48:03 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x00007f9e48453dd0%3E" for 127.0.0.1 at 2020-12-12 21:48:05 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:48:06 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nMwFG6NBUk3j0vCNwBfIl4z0qsDg9NCPV9jIIMir3lB5UJXgFgW2eXIqWeeeahPnHuKdxDk7e9imIX1vPZAEIg==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:48:07 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bqi5mGsqYr34CH1TrIAKOANPnOxHdJxfyxYl92WjxGyLNClj3m6GiWnw1Dny/dFIkVmr6J67Nwg675C4kJgeHg==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:48:07 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3OjSTzAYakCW17H8hfvjhN39npi3sQpG1L7pBNq3oNQ5dEK0hVyOdAcvGJbbhjj0T+upnG5+oRElR1xLL4x6pg==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:48:07 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BWLO9v9a+gj3ELKq4SIsIc8RQKMILI326E647SCi/cng/l4NSh4ePGboG8C/X/dRXQd3p9HjJqEZtw2i1Zknuw==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:48:08 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SvdMOOCr6REuVUKreJG92jcxvE+32BG0u2jFLKUZFLiva9zDVe8NJb+t68Em7GaqpSeLS24XuuNKkXBjUCLOyg==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-12 21:48:14 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x000055f7677b3d88%3E" for 127.0.0.1 at 2020-12-12 21:48:16 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:48:17 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nN/0vG5VyWBkHONn6dgNY5w4Xrk0ZEBqzYn41RkhG7l5Q2RH2xEtVPXkSg23pdYTDi5pve2r6z08cE2a7BrByw==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+No template found for BooksController#create, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:48:17 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nN/0vG5VyWBkHONn6dgNY5w4Xrk0ZEBqzYn41RkhG7l5Q2RH2xEtVPXkSg23pdYTDi5pve2r6z08cE2a7BrByw==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+No template found for BooksController#create, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:48:17 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nN/0vG5VyWBkHONn6dgNY5w4Xrk0ZEBqzYn41RkhG7l5Q2RH2xEtVPXkSg23pdYTDi5pve2r6z08cE2a7BrByw==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+No template found for BooksController#create, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:48:18 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nN/0vG5VyWBkHONn6dgNY5w4Xrk0ZEBqzYn41RkhG7l5Q2RH2xEtVPXkSg23pdYTDi5pve2r6z08cE2a7BrByw==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+No template found for BooksController#create, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:48:18 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nN/0vG5VyWBkHONn6dgNY5w4Xrk0ZEBqzYn41RkhG7l5Q2RH2xEtVPXkSg23pdYTDi5pve2r6z08cE2a7BrByw==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+No template found for BooksController#create, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x000055f7677b3d88%3E" for 127.0.0.1 at 2020-12-12 21:48:44 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 10ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:48:45 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FveHb4eDjzr6xrnd/srYuURNrWI3LucS5ZNOWh5m10DzaxeUMsdrDms+ELegtwPJ1luaZu7hTEUUavsV610NMg==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:14
+No template found for BooksController#create, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:48:46 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FveHb4eDjzr6xrnd/srYuURNrWI3LucS5ZNOWh5m10DzaxeUMsdrDms+ELegtwPJ1luaZu7hTEUUavsV610NMg==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:14
+No template found for BooksController#create, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x000055f7677b3d88%3E" for 127.0.0.1 at 2020-12-12 21:49:57 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:49:58 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XIAYr/Yq7jFBkK67FYr7TJdHPUKSnMSRREVCPFjOSPi5HIhUQ24KBdBoB9FL9yA8BVEKRktTb8a1vPdzrfWSig==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:14
+No template found for BooksController#create, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:49:58 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XIAYr/Yq7jFBkK67FYr7TJdHPUKSnMSRREVCPFjOSPi5HIhUQ24KBdBoB9FL9yA8BVEKRktTb8a1vPdzrfWSig==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:14
+No template found for BooksController#create, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:49:59 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XIAYr/Yq7jFBkK67FYr7TJdHPUKSnMSRREVCPFjOSPi5HIhUQ24KBdBoB9FL9yA8BVEKRktTb8a1vPdzrfWSig==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:14
+No template found for BooksController#create, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x000055f7677b3d88%3E" for 127.0.0.1 at 2020-12-12 21:50:12 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 4.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x000055f7677b3d88%3E" for 127.0.0.1 at 2020-12-12 21:50:13 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:50:25 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M5JWs+GmF/DlO3A2TmYdjcOYMWWswbfs4bZ+k7XH8nbWDsZIVOLzxHTD2VwQG8b9UY4GYXUOHLsQT8vcQPwoBA==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:50:25 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GVZrNhzxKrqQu7pwJn8ObYVJ3hO0w0H/r+XZJf726Kv8yvvNqbXOjgFDExp4AtUdF1/pF20M6qheHGxqC80y2Q==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:50:25 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4m4HzxobG+aUMFw7wWSoKjCoyy987mhN34Mp3TfJQ3cH8pc0r1//0gXI9VGfGXNaor78K6UhwxouepySwvKZBQ==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:50:32 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4m4HzxobG+aUMFw7wWSoKjCoyy987mhN34Mp3TfJQ3cH8pc0r1//0gXI9VGfGXNaor78K6UhwxouepySwvKZBQ==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:50:37 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3Ak9oezeGOX2y9ciOZxE30zltw2nungpfAwqkiUcZyU5la1aWZr80Wczfkhn4Z+v3vOACX51036N9Z/d0Ce9Vw==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2020-12-12 21:50:48 -0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for BooksController):
+  
+actionpack (5.2.4.4) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.4) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.4) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.4) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.4) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.4) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.4) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.4) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-12-12 21:50:51 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x000055f7677925e8%3E" for 127.0.0.1 at 2020-12-12 21:50:52 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:50:53 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/jyhuiT/VTlR/uGnY3vW5p3qQYld2Sm1ROQA2QAyvp8boDFBkbuxDcAGSM09Bg2WD/x2jYQWguK1HbWW9Qlk7Q==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:50:54 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4XqfrpEnCiFiu1U+lDA5HAJJZpqrGU0vdvl+50lFo8sE5g9VJGPuFfND/FTKTeJskF9RnnLW5niHAMuovH55uQ==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:50:54 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VePuztfT79XLbYzO3yp2qbmgkL1dNy3XmJqeNwePr66wf341YpcL4VqVJaSBV63ZK7anuYT4hoBpYyt48rR13A==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:50:55 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RNvL5knz4iAdLN8x+6RbU1PIsSkYbOarpKIK9Oud94+hR1sd/LcGFIzUdlul2YAjwd6GLcGjTfxVW7+7HqYt/Q==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:50:56 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mt5t7DqNBBYFDrvzVbkqhusFfV0VO8eNX2ukP8dOIFbXQv0Xj8ngIpT2EpkLxPH2eRNKWcz0bNqukhFwMnX6JA==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2020-12-12 21:51:10 -0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for BooksController):
+  
+actionpack (5.2.4.4) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.4) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.4) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.4) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.4) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.4) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.4) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.4) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-12-12 21:51:11 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x000055f7672f3258%3E" for 127.0.0.1 at 2020-12-12 21:51:12 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:51:13 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+fIv72u5ZHid7pyJJsicLhp/klKfE0C2PcB3HiNicrYcbr8U3v2ATAwWNeN4tUdeiGmlVkbc6+HMOcJR1lmoxA==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:51:14 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1djY1uN3oKpQNdnGgD75USGItX6Dd9K6Vend/nQqlF8wREgtVjNEnsHNcKzeQyIhs56Celq4ee2kEGixgRFOLQ==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:51:15 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wGEpZToHZo5KAjK5l9zqHMYf6UI+UArxt4W//5po+1Ml/bmej0OCutv6m9PJoTFsVAneRuefoaZGfAqwb1MhIQ==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:51:29 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wGEpZToHZo5KAjK5l9zqHMYf6UI+UArxt4W//5po+1Ml/bmej0OCutv6m9PJoTFsVAneRuefoaZGfAqwb1MhIQ==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:51:30 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"payAEc1m6vDd1RGq7fOaBN161KfJCzDxepxEO3x9/mtAMBDqeCIOxEwtuMCzjkF0T2zjoxDEm6aLZfF0iUYkGQ==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-12 21:51:32 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x00007f9e4818f108%3E" for 127.0.0.1 at 2020-12-12 21:51:33 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:51:34 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GxUsXpn8tCnUTFelfHjSVqsfcCyXnvI5XMNno9WL0BP+ibylLLhQHUW0/s8iBQkmOQlHKE5RWW6tOtLsILAKYQ==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:52:01 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GxUsXpn8tCnUTFelfHjSVqsfcCyXnvI5XMNno9WL0BP+ibylLLhQHUW0/s8iBQkmOQlHKE5RWW6tOtLsILAKYQ==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-12 21:52:04 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x000055f767709ef0%3E" for 127.0.0.1 at 2020-12-12 21:52:05 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 21:52:06 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jHkTvlrfLS3aYYeGpe9gFQSPdlheKO/J7woJHG9N8Ztp5YNF75vJGUuZLuz7krtllplBXIfnRJ4e87xTmnYr6Q==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 22:33:57 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQljzzUsao7/PDBBHts+ALYetENc90LdbNbHM1WkwKlElfM0gGiOum7EmStApuVwJAiDR4U46YqdL3J8oJ8a2w==", "book"=>{"title"=>"", "author"=>"", "publication_year"=>"", "genre"=>"", "abstract"=>""}, "commit"=>"Enviar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 10ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-12 22:34:02 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/new.%23%3CBook::ActiveRecord_Relation:0x00007f9e483ff000%3E" for 127.0.0.1 at 2020-12-12 22:34:03 -0300
+Processing by BooksController#new as 
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2020-12-12 22:34:41 -0300
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QNDQHbIPEOIbntYZEx3Oeh5xQtBxBxOz3sOZSboQKWilTEDmB0v01opmf3NNYBUKjGd11KjIuOQvOiwGTyvzGg==", "book"=>{"title"=>"Aventuras de Zephyr", "author"=>"Praise the Windborn", "publication_year"=>"1988", "genre"=>"Épico", "abstract"=>"Tornados everywhere. Radiance queima. O passaro voa. Long live the Zephyr."}, "commit"=>"Enviar:"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication_year", "abstract", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Aventuras de Zephyr"], ["author", "Praise the Windborn"], ["publication_year", 1988], ["abstract", "Tornados everywhere. Radiance queima. O passaro voa. Long live the Zephyr."], ["genre", "Épico"], ["created_at", "2020-12-13 01:34:41.738098"], ["updated_at", "2020-12-13 01:34:41.738098"]]
+  ↳ app/controllers/books_controller.rb:13
+  [1m[35m (54.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:13
+Redirected to http://localhost:3000/books/2
+Completed 302 Found in 58ms (ActiveRecord: 55.1ms)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2020-12-12 22:34:41 -0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:7
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-12 22:34:52 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+
+
